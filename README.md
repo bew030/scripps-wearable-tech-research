@@ -1,1 +1,0 @@
-# scripps-wearable-tech-research
