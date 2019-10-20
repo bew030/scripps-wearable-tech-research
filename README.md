@@ -11,7 +11,7 @@ Out of respect of user privacy I've gone ahead and deleted the dataset used for 
 
 To make data analysis as neat as possible, all the methods have been organized into a well ordered package. Methods that analyze IBI, motion, and sleep have all been packaged in their own respective package. You can import all of these packages at once by importing the 'packages' package. 
 
-TL;DR: 
+__TL;DR:__ 
 
 run the following code in your Jupyter Notebook: 
 
@@ -27,11 +27,11 @@ Run the following code in your Terminal:
 pip install packages
 ```
 
-# The Analysis 
+The packages for IBI, motion, and sleep are primarily divided into methods that organize and clean the dataset and methods that visualize the data. The methods for [IBI](https://github.com/bew030/scripps-wearable-tech-research/blob/master/packages/ibisdk/wrapper.py), [motion](https://github.com/bew030/scripps-wearable-tech-research/blob/master/packages/motionsdk/wrapper.py), and [sleep](https://github.com/bew030/scripps-wearable-tech-research/blob/master/packages/sleepsdk/wrapper.py) are well documented, but if you have any issues please feel free to reach out. 
 
-__Introduction__ 
 
-__Understanding and Cleaning the Data__ 
+# The Data 
+
 
 _IBI Dataset_ 
 
