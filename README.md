@@ -1,23 +1,31 @@
-# Scripps Wearable Tech Research
+# Overview <img src="https://i.ytimg.com/vi/-nTwk1gqof8/maxresdefault.jpg" align="right" height="45">
+_Created by Bernard Wong (bew030@ucsd.edu) in partnership with the [Scripps Research Translational Institute](https://www.scripps.edu/science-and-medicine/translational-institute/) and Giorgio Quer_
 
-# Overview 
+Over the summer, I had the great opportunity to intern under Giorgio Quer for Scripps Research Translational Institute. Oura, a wearable ring that tracks different health metrics, had shared the data with us and had given us the freedom to explore. Me and my mentor worked together to organize a series of questions that we aimed to answer by the end of the internship and then created weekly goals to help maintain productiveness. Throughout this research experience, I had the joy of collaborating with other data scientists at the institute, learn about working with real, messy data, and ultimately present my findings in front of a panel of well established doctors and health professionals. I would like to extend my thanks to the faculty at the institute for giving me such a valuable learning experience, and especially thank Giorgio for mentoring me through the process and making this exploration extremely rewarding. 
 
-Hello! This folder is used to help read in, analyze, and visualize the sleep, IBI, and motion datasets created from the OURA wearable. In order to to run the program: 
-1) ensure that you've downloaded everything, especially the packages folder, which will contain the necessary python files for you to import and use the proper functions 
-2) read in the proper datasets; examples can be found within the Scripps Research Project Overview document in the writings folder 
-For ease of use, simply utilize the Final Notebook to test the available functions. A description of each file/folder is as follows: 
+This repository has been organized for easy navigation. It contains a [writings](https://github.com/bew030/scripps-wearable-tech-research/tree/master/writings) which contains all the writing that I had done during my research, which includes my presentation, an exploratory paper about the impact of wearable technology, and my final research paper. The [final paper](https://github.com/bew030/scripps-wearable-tech-research/blob/master/writings/Scripps%20Research%20Project%20Overview.pdf) can be found and downloaded in this folder, but you can also find the results of my research throughout the rest of this README. There is also an [IBI_sleep_visualizations folder](https://github.com/bew030/scripps-wearable-tech-research/tree/master/IBI_sleep_visualizations) that contains all of the visualizations generated from the data: the code and notebooks used to explore the data and create these visualizations can also be found in the [python notebook workshops folder](https://github.com/bew030/scripps-wearable-tech-research). You can also take a look at the [final jupyter notebook](https://github.com/bew030/scripps-wearable-tech-research/blob/master/Final%20Notebook.ipynb) if you're interested in viewing the visualization code run. If you have data from an Oura wearable or data that fits the dataset criteria, you may also download the code from the [packages folder](https://github.com/bew030/scripps-wearable-tech-research/tree/master/packages). This code contains the packages for [ibi analysis](https://github.com/bew030/scripps-wearable-tech-research/tree/master/packages/ibisdk),[sleep analysis](https://github.com/bew030/scripps-wearable-tech-research/tree/master/packages/sleepsdk), and [motion analysis](https://github.com/bew030/scripps-wearable-tech-research/tree/master/packages/motionsdk). 
 
-FINAL NOTEBOOK: This is a jupyter notebook that organizes everything and allows you to test and see the methods that have been created. Currently it has preloaded datasets loaded onto the notebook, but any datasets of a similar format should work with the methods. ENSURE IMPORTS ARE WORKING PROPERLY! 
+Out of respect of user privacy I've gone ahead and deleted the dataset used for my exploration. Explanations and snippets of the dataset have been scattered throughout the writings and the report, but if you have any questions or would like to learn more, please feel free to reach out by email or leave an issue. 
 
-IBI_SLEEP_VISUALIZATIONS: this is a folder that contains some of the previous example visualizations created using the methods 
+# Using the Code 
 
-DATASETS: this is where you'd keep the datasets you're interested in analyzing in. There should be 3 datasets, one containing information about interbeat interval (IBI), one containing information about the OURA motion, and one containing information about sleep. To learn more, look through the writings folder 
+To make data analysis as neat as possible, all the methods have been organized into a well ordered package. Methods that analyze IBI, motion, and sleep have all been packaged in their own respective package. You can import all of these packages at once by importing the 'packages' package. 
 
-PACKAGES: this folder contains the files for the packages used in the code. They should be imported properly in the final notebook
+TL;DR: 
 
-PYTHON_NOTEBOOK_WORKSHOPS: these were previous python notebooks used to help develop methods and create the final notebook; they can generally be ignored, unless you're interested in my work progress
+run the following code in your Jupyter Notebook: 
 
-WRITINGS: This contains the writings involved with this project, including a paper describing the project and what the datasets are and what the methods do, a research paper involved with talking about wearable technology and its impact on the health industry, and a pdf version of a presentation that had been done in front of an audience at Scripps Translational Institute. Feel free to look through this folder to learn more about the project process and about the data and methods. 
+```python 
+from packages import MotionAnalyzer
+from packages import SleepAnalyzer
+from packages import IBIAnalyzer
+```
+
+Run the following code in your Terminal: 
+
+```python
+pip install packages
+```
 
 # The Analysis 
 
