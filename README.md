@@ -1,3 +1,37 @@
+# Scripps Wearable Tech Research
+
+# Overview 
+
+# The Analysis 
+
+__Introduction__ 
+
+__Understanding and Cleaning the Data__ 
+
+_IBI Dataset_ 
+
+_Motion Dataset_ 
+
+_Sleep Dataset_ 
+
+__Data Analysis__ 
+
+_IBI Dataset_ 
+
+_Sleep Dataset_ 
+
+__Conclusion__
+
+## An Overview on Methods to be Used on Future Data ## 
+
+
+# Badges 
+[![GitHub issues](https://img.shields.io/github/issues/bew030/scripps-wearable-tech-research?color=purple)](https://github.com/bew030/scripps-wearable-tech-research/issues)
+[![GitHub forks](https://img.shields.io/github/forks/bew030/scripps-wearable-tech-research?color=orange)](https://github.com/bew030/scripps-wearable-tech-research/network)
+[![GitHub stars](https://img.shields.io/github/stars/bew030/scripps-wearable-tech-research)](https://github.com/bew030/scripps-wearable-tech-research/stargazers)
+[![HitCount](http://hits.dwyl.io/bew030/scripps-wearable-tech-research.svg)](http://hits.dwyl.io/bew030/scripps-wearable-tech-research)
+
+
 # scripps-wearable-tech-research
 Hello! This folder is used to help read in, analyze, and visualize the sleep, IBI, and motion datasets created from the OURA wearable. In order to to run the program: 
 1) ensure that you've downloaded everything, especially the packages folder, which will contain the necessary python files for you to import and use the proper functions 
