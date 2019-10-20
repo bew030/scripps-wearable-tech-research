@@ -1,4 +1,7 @@
-# scripps-wearable-tech-research
+# Scripps Wearable Tech Research
+
+# Overview 
+
 Hello! This folder is used to help read in, analyze, and visualize the sleep, IBI, and motion datasets created from the OURA wearable. In order to to run the program: 
 1) ensure that you've downloaded everything, especially the packages folder, which will contain the necessary python files for you to import and use the proper functions 
 2) read in the proper datasets; examples can be found within the Scripps Research Project Overview document in the writings folder 
@@ -15,3 +18,32 @@ PACKAGES: this folder contains the files for the packages used in the code. They
 PYTHON_NOTEBOOK_WORKSHOPS: these were previous python notebooks used to help develop methods and create the final notebook; they can generally be ignored, unless you're interested in my work progress
 
 WRITINGS: This contains the writings involved with this project, including a paper describing the project and what the datasets are and what the methods do, a research paper involved with talking about wearable technology and its impact on the health industry, and a pdf version of a presentation that had been done in front of an audience at Scripps Translational Institute. Feel free to look through this folder to learn more about the project process and about the data and methods. 
+
+# The Analysis 
+
+__Introduction__ 
+
+__Understanding and Cleaning the Data__ 
+
+_IBI Dataset_ 
+
+_Motion Dataset_ 
+
+_Sleep Dataset_ 
+
+__Data Analysis__ 
+
+_IBI Dataset_ 
+
+_Sleep Dataset_ 
+
+__Conclusion__
+
+## An Overview on Methods to be Used on Future Data ## 
+
+
+# Badges 
+[![GitHub issues](https://img.shields.io/github/issues/bew030/scripps-wearable-tech-research?color=purple)](https://github.com/bew030/scripps-wearable-tech-research/issues)
+[![GitHub forks](https://img.shields.io/github/forks/bew030/scripps-wearable-tech-research?color=orange)](https://github.com/bew030/scripps-wearable-tech-research/network)
+[![GitHub stars](https://img.shields.io/github/stars/bew030/scripps-wearable-tech-research)](https://github.com/bew030/scripps-wearable-tech-research/stargazers)
+[![HitCount](http://hits.dwyl.io/bew030/scripps-wearable-tech-research.svg)](http://hits.dwyl.io/bew030/scripps-wearable-tech-research)
