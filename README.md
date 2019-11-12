@@ -126,12 +126,31 @@ Overall, we were able to create lots of useful visuals, and it was a unique expe
 
 _Sleep Dataset_ 
 
+Because of the large amount of variables within the sleep dataset, I needed to determine which of the columns would give the most information or had the biggest impact on sleep. In order to narrow down my options, I created a correlation heat map that shows the positive and negative correlation between variables in the dataset.
+
 <p align="center">
-	<img src=""/>
+	<img src="https://github.com/bew030/scripps-wearable-tech-research/blob/master/read_me_images/Screen%20Shot%202019-10-19%20at%209.18.32%20PM.png"/>
 </p>
+
+As can be seen by this correlation heatmap, there are a few items that have little to no correlation with none of the other variables such as the breath measurements. Overall, this heatmap is a great way to quickly glance and see what the relationship between two sleep measurements have on each other. I was primarily interested in what affected the sleep score, and to no surprise it seemed to be that variables regarding duration of sleep, whether it be sleep cycles or sleep as a whole, seemed to have the largest positive correlation with the sleep score.
+
+Because the duration of sleep played such a large role in the sleep score, I decided to create
+a few plots comparing the sleep duration and the bedtime start with the sleep score. By dividing up the sleep data points into two groups, a ‘nap’ group where sleep was less than 30 minutes and a ‘sleep’ group which was any sleep that was more than 30 minutes, I hoped to discover some interesting patterns. 
+
 <p align="center">
-	<img src=""/>
+	<img src="https://github.com/bew030/scripps-wearable-tech-research/blob/master/read_me_images/Screen%20Shot%202019-11-11%20at%205.03.56%20PM.png"/>
 </p>
+
+What was interesting to see was that the plots for Sleep Duration vs. Sleep Score and Bedtime Start vs. Sleep Score both showed stark differences for the group. Overall, the nap group had significantly smaller scores which was honestly expected. Along with that, naps that lasted longer had a significantly greater increase in score compared to other shorter naps, while the score change was less significant for sleeps. An interesting thing to note was the similarities between the groups. No matter the sleep or nap group, the later the bedtime start was, the worse the score tended to be, which supports previous studies regarding sleep time.
+
+Another interesting thing that we had
+decided to plot was sleep score and its effect on sleep in general. We were able to plot two different aspects regarding sleep score: the duration of sleep phases and its effect on sleep score and the amount of each sleep phase our subject had per day.
+
+<p align="center">
+	<img src="https://github.com/bew030/scripps-wearable-tech-research/blob/master/read_me_images/Screen%20Shot%202019-10-19%20at%209.19.13%20PM.png"/>
+</p>
+
+here are a lot of great takeaways from these graphs. The Duration of Sleep Phases vs. Sleep Score helped determine what were some of the more important sleep phases, and it’s quite clear that more deep sleep and REM sleep leads to a more significant increase in sleep score, especially when compared to light sleep. The durations of each sleep cycle for each day help us find days where certain sleep phases are lacking and give us a better idea on how much of sleep phase is happening throughout our subject’s life. This information might help future exploration, as you might be able to find outlier dates where certain sleep cycles are different and use it to see its effects on IBI, motion, and daily life.
 
 # Conclusions
 
