@@ -3,7 +3,7 @@
 ibisdk.py is a package that compiles all the necessary methods for IBI manipulation regarding the data from the wearable 
 device. Use the included final notebook to access the methods and test them. 
 
-Last modified: September 7th. 2018
+Last modified: September 7th. 2019
 '''
 
 __author__ = 'Bernard Wong'
