@@ -96,13 +96,21 @@ To explore the differences between waking and sleeping hours, I decided to plot 
 
 This is where the jumps in IBI become extremely apparent. As you can see in these line plots, there are consistently peaks that occur over time, most likely signifying jumps from the sympathetic and parasympathetic nervous system. You can also begin to see a slight difference between IBI variance at night and in the morning. While the night line plot has plenty of small spikes, the morning IBI stays relatively calm and stable. This can possibly be explained the lack of consciousness during the late night; during sleep, the brain can fully focus on moderating and controlling the body, while during waking hours the body has to focus on interpreting a lot more signals and controlling a lot more things.
 
+Another part of the data that we spent a lot of time exploring was the validity of the data. We were interested in a few questions; 1) was the validity of IBI affected by the day? and 2) did valid IBI occur in chunks, or were they sporadic? Using both a fitted and regular line plot, we were able to plot the proportion of data that was the most valid (or had a validity of one) and discovered that almost every day more than 80% of the IBI measurements were valid.
+
 <p align="center">
 	<img src="https://github.com/bew030/scripps-wearable-tech-research/blob/master/read_me_images/Screen%20Shot%202019-10-19%20at%209.17.32%20PM.png"/>
 </p>
 
+While the amount of data recorded varied a lot more during the month of December, a majority of the data was valid for each of the days recorded, meaning that it was fair to only do statistical work on just the most valid IBI data.
+
+To help us answer the second question, we implemented a stochastic model known as Markov’s chain. The markov chain is a system that models transitions from one ‘state’ to another according to certain probability rules; our task was to discover what these probability rules are. To read more about what a Markov's chain is, click [here](https://brilliant.org/wiki/markov-chains/). By finding out the probability of a valid IBI being followed by an invalid or valid IBI, and by finding out the probability of an invalid IBI being followed by an invalid or valid IBI, we can see if the valid IBIs are found together or sporadically spread apart. 
+
 <p align="center">
 	<img src="https://github.com/bew030/scripps-wearable-tech-research/blob/master/read_me_images/Screen%20Shot%202019-10-19%20at%209.17.41%20PM.png"/>
 </p>
+
+With our Markov’s chain, we were able to discover that valid IBIs are typically found together; when a valid IBI is recorded, there is a 95% chance of the next IBI measurement being valid. This makes sense, especially considering the fact that invalid data is typically caused by sensor or technological error, which doesn’t happen too often.
 
 _Sleep Dataset_ 
 
