@@ -74,16 +74,43 @@ placeholders representing nonexistent data, which enabled me to see full sleep c
 
 Being such a big dataset, there were bound to be plenty of errors within the data. Time measurements were often slightly off, conditions were often erroneous, and sometimes software issues such as the wearable coming off or losing power would lead to errors in measuring sleep cycles and breathing rate. By sweeping the data and removing as many of these inaccurate data points, I was able to make the data a little more readable and easier to process later on. Even after the cleaning there were 1780 columns of data, making this dataset extremely informative.
 
+Overall, the process of understanding and cleaning the datasets was a long and tedious process. However, its importance cannot be stressed enough; through this organization, I was able to understand the data and get a better understanding on what information I was working with. Along with that, I was able to determine what data was truly useful and what wasn’t, which made the analytics and visualizations a much easier process in the future. Although I gave a quick summary in this paper, much more work went into understanding the datasets, including writing a description and finding meaningful statistics for each section. If you’re interested in seeing what additional work was done or to understand the dataset a little bit more, the dictionary can be accessed [here]().
 
 # Visualizations
 
 _IBI Dataset_ 
 
+
+<p align="center">
+	<img src="https://github.com/bew030/scripps-wearable-tech-research/blob/master/read_me_images/Screen%20Shot%202019-10-19%20at%209.17.11%20PM.png"/>
+</p>
+
+<p align="center">
+	<img src="https://github.com/bew030/scripps-wearable-tech-research/blob/master/read_me_images/Screen%20Shot%202019-10-19%20at%209.17.21%20PM.png"/>
+</p>
+
+<p align="center">
+	<img src="https://github.com/bew030/scripps-wearable-tech-research/blob/master/read_me_images/Screen%20Shot%202019-10-19%20at%209.17.32%20PM.png"/>
+</p>
+
+<p align="center">
+	<img src="https://github.com/bew030/scripps-wearable-tech-research/blob/master/read_me_images/Screen%20Shot%202019-10-19%20at%209.17.41%20PM.png"/>
+</p>
+
 _Sleep Dataset_ 
+
+<p align="center">
+	<img src=""/>
+</p>
+<p align="center">
+	<img src=""/>
+</p>
 
 # Conclusions
 
+Working with this data was truly a great and unique experience, but there are still many more things that can be done with it. While I had begun to string IBI and sleep together and work on determining the effects each had on one another, I had been limited in time and had not been able to explore the two datasets together as much as they could be. Along with that, little was done with the motion dataset, leading to much more exploration. It would also be great to use these cleaning methods that we’ve created to help implement certain machine learning algorithms that could potentially predict swings in IBI, IBIs effects on sleep, and other potential events. Most importantly, however, is trying to use these methods on a larger population to find more generalized trends. Because this exploration only involved one sample, we were able to learn a lot about the organization of the data and create visuals describing this individual’s two week period. However, the true potential comes when these methods are used on a large sample, which can reveal a plethora of different trends that occur with heartbeats and sleep.
 
+While there is still much more exploration that can be done, there are a few things that are certain. Big data and wearable technology is changing society on a very large scale, and is not only allowing medical professionals to analyze and solve problems that they couldn’t solve before, but is also educating the general public about personal health and assisting in personal growth. With such a short amount of time, we were able to create beautiful visuals, get a better understanding about IBI and sleep, and create methods that can be used for wide scale data to better understand a larger population. This is simply the tip of the iceberg and as sensor prices decrease, big data plays a more prominent role in the health industry, and wearables become more and more frequent in our everyday lives, the positive impact and medical research will continue to grow with it.
 
 # Badges 
 [![GitHub issues](https://img.shields.io/github/issues/bew030/scripps-wearable-tech-research?color=purple)](https://github.com/bew030/scripps-wearable-tech-research/issues)
