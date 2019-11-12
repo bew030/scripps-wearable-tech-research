@@ -74,20 +74,27 @@ placeholders representing nonexistent data, which enabled me to see full sleep c
 
 Being such a big dataset, there were bound to be plenty of errors within the data. Time measurements were often slightly off, conditions were often erroneous, and sometimes software issues such as the wearable coming off or losing power would lead to errors in measuring sleep cycles and breathing rate. By sweeping the data and removing as many of these inaccurate data points, I was able to make the data a little more readable and easier to process later on. Even after the cleaning there were 1780 columns of data, making this dataset extremely informative.
 
-Overall, the process of understanding and cleaning the datasets was a long and tedious process. However, its importance cannot be stressed enough; through this organization, I was able to understand the data and get a better understanding on what information I was working with. Along with that, I was able to determine what data was truly useful and what wasn’t, which made the analytics and visualizations a much easier process in the future. Although I gave a quick summary in this paper, much more work went into understanding the datasets, including writing a description and finding meaningful statistics for each section. If you’re interested in seeing what additional work was done or to understand the dataset a little bit more, the dictionary can be accessed [here]().
+Overall, the process of understanding and cleaning the datasets was a long and tedious process. However, its importance cannot be stressed enough; through this organization, I was able to understand the data and get a better understanding on what information I was working with. Along with that, I was able to determine what data was truly useful and what wasn’t, which made the analytics and visualizations a much easier process in the future. Although I gave a quick summary in this paper, much more work went into understanding the datasets, including writing a description and finding meaningful statistics for each section. If you’re interested in seeing what additional work was done or to understand the dataset a little bit more, the dictionary can be accessed [here](https://github.com/bew030/scripps-wearable-tech-research/blob/master/writings/Dictionary.pdf).
 
 # Visualizations
 
 _IBI Dataset_ 
 
+Because of my unfamiliarity with IBI, I wanted to get a basic understanding using a few visuals to help me. Further research and explanations from my mentor taught me that IBI tends to vary a lot in a healthy human, and can also vary depending on time of day, especially comparing waking and sleeping hours. To make this more apparent, I plotted IBIs of various validities over time.
 
 <p align="center">
 	<img src="https://github.com/bew030/scripps-wearable-tech-research/blob/master/read_me_images/Screen%20Shot%202019-10-19%20at%209.17.11%20PM.png"/>
 </p>
 
+There is a lot that can be learned from these visuals. There are noticeable white gaps between certain time periods which helps us see when data isn’t being recorded. Along with that, we can also start to see the differences between valid data. While IBI measurements with validity 1 stay in the range of 800 to 1700 milliseconds, IBI measurements of validity 2 and 3 are often at the extremes like 2000 milliseconds and are a lot more sparse. What’s also interesting to see is how much IBI varies daily. Because the IBIs are greatly spread apart and create ‘smears’ of different IBIs, this signifies that the sample has greatly varying IBIs and as a result have a generally healthy neural communication network.
+
+To explore the differences between waking and sleeping hours, I decided to plot IBIs during different times of the day. Using a method, I was able to plot the first 100 valid IBIs of a random time period during the morning, afternoon, evening, or night time.
+
 <p align="center">
 	<img src="https://github.com/bew030/scripps-wearable-tech-research/blob/master/read_me_images/Screen%20Shot%202019-10-19%20at%209.17.21%20PM.png"/>
 </p>
+
+This is where the jumps in IBI become extremely apparent. As you can see in these line plots, there are consistently peaks that occur over time, most likely signifying jumps from the sympathetic and parasympathetic nervous system. You can also begin to see a slight difference between IBI variance at night and in the morning. While the night line plot has plenty of small spikes, the morning IBI stays relatively calm and stable. This can possibly be explained the lack of consciousness during the late night; during sleep, the brain can fully focus on moderating and controlling the body, while during waking hours the body has to focus on interpreting a lot more signals and controlling a lot more things.
 
 <p align="center">
 	<img src="https://github.com/bew030/scripps-wearable-tech-research/blob/master/read_me_images/Screen%20Shot%202019-10-19%20at%209.17.32%20PM.png"/>
