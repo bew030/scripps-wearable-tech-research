@@ -112,6 +112,18 @@ To help us answer the second question, we implemented a stochastic model known a
 
 With our Markov’s chain, we were able to discover that valid IBIs are typically found together; when a valid IBI is recorded, there is a 95% chance of the next IBI measurement being valid. This makes sense, especially considering the fact that invalid data is typically caused by sensor or technological error, which doesn’t happen too often.
 
+As a final overview of the IBI data, we decided to take a statistical approach and do some research on the outliers each day while also calculating some medical numbers involving heart rate variance (or HRV). By creating a few boxplots of the IBI each day, we can easily see the median of each day, see the outliers that occur, and also see how each day compares to the other.
+
+<p align="center">
+	<img src="https://github.com/bew030/scripps-wearable-tech-research/blob/master/read_me_images/Screen%20Shot%202019-11-11%20at%205.02.43%20PM.png"/>
+</p>
+
+While outliers are normally not statistically great, they have a different meaning for IBIs. Because a greater variance in IBI signifies a stronger neural communication system, the great number of outliers is actually a great signifier for our sample’s health. Along with that, we can start to see general trends of IBI depending on the date. These plots will be even more informative as they are applied to bigger datasets, as we can see if there are any seasonal patterns or any other potential factors that might affect IBI. 
+
+The last analysis we did with the IBI data was come up with a few methods that helped calculate different numbers regarding HRV, which included RMSSD ( the root mean square of successive RR interval differences), SDNN (the standard deviation of the IBI), NN50 (the number of NN intervals where the the interval difference is more than 50 milliseconds), and PNN50 (the proportion of the NN intervals where the interval difference is more than 50 milliseconds). 
+
+Overall, we were able to create lots of useful visuals, and it was a unique experience learning about IBIs using the data collected by these new and unique sensors in the wearable.
+
 _Sleep Dataset_ 
 
 <p align="center">
